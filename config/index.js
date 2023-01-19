@@ -21,10 +21,7 @@ module.exports = (app) => {
 
   // controls a very specific header to pass headers from the frontend
   app.use(
-    cors({
-      credentials: true,
-      origin: process.env.ORIGIN, MONGODB_URI, https://gamer-orbit.onrender.com, https://gamer-orbit.onrender.com/api/auth/verify,
-    })
+    cors()
   );
 
   // In development environment the app logs
