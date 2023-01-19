@@ -23,7 +23,7 @@ module.exports = (app) => {
   app.use(
     cors({
       credentials: true,
-      origin: process.env.ORIGIN, MONGODB_URI, https://gamer-orbit.onrender.com,
+      origin: process.env.ORIGIN, MONGODB_URI, https://gamer-orbit.onrender.com, https://gamer-orbit.onrender.com/api/auth/verify,
     })
   );
 
