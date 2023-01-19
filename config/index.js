@@ -21,7 +21,10 @@ module.exports = (app) => {
 
   // controls a very specific header to pass headers from the frontend
   app.use(
-    cors()
+    cors({
+      credentials: true,
+      origin: process.env.ORIGIN,
+    })
   );
 
   // In development environment the app logs
